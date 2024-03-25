@@ -4,42 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7634fb13-4b59-4e94-9239-c2e710fca976" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Controller/Site.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/path.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Src/Application.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Src/Route.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Src/Settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="7634fb13-4b59-4e94-9239-c2e710fca976" name="Changes" comment="реализация базового приложения">
+      <change afterPath="$PROJECT_DIR$/core/Src/View.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/layouts/main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/site/hello.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/app/Controller/Site.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/app/Model/Post.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/configs/db.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/configs/path.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/core/Scr/Application.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/core/Scr/Route.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/core/Scr/Settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/core/Scr/View.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/core/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/routes/web.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/views/layouts/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/views/site/hello.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop-it-mvc/views/site/post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controller/Site.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/Site.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,11 +65,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711372697641</updated>
-      <workItem from="1711372699555" duration="2998000" />
+      <workItem from="1711372699555" duration="3627000" />
     </task>
+    <task id="LOCAL-00001" summary="реализация базового приложения">
+      <option name="closed" value="true" />
+      <created>1711377435757</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711377435757</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="реализация базового приложения" />
+    <option name="LAST_COMMIT_MESSAGE" value="реализация базового приложения" />
   </component>
 </project>
