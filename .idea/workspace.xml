@@ -1,29 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9217debc-7323-4b34-a961-bb1618dbfb2d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Deskto/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/app/Controller/Site.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/app/Model/Post.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/configs/db.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/configs/path.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/core/Scr/Application.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/core/Scr/Route.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/core/Scr/Settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/core/Scr/View.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/core/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/routes/web.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/views/layouts/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/views/site/hello.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deskto/pop-it-mvc/views/site/post.php" beforeDir="false" />
+    <list default="true" id="7634fb13-4b59-4e94-9239-c2e710fca976" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Controller/Site.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/path.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/Src/Application.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/Src/Route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/Src/Settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/app/Controller/Site.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/app/Model/Post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/configs/db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/configs/path.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/core/Scr/Application.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/core/Scr/Route.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/core/Scr/Settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/core/Scr/View.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/core/bootstrap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/views/layouts/main.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/views/site/hello.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pop-it-mvc/views/site/post.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +50,13 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Deskto" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
+  "customColor": "",
+  "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2eB3a37QOUnnXTimRY8rtOxocS6" />
+  <component name="ProjectId" id="2eBKnMLy7AmSVoAmKyxiep2AqOV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,8 +65,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/xampp/htdocs",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/xampp/htdocs/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +75,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\public" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,12 +90,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9217debc-7323-4b34-a961-bb1618dbfb2d" name="Changes" comment="" />
-      <created>1711364203410</created>
+      <changelist id="7634fb13-4b59-4e94-9239-c2e710fca976" name="Changes" comment="" />
+      <created>1711372697641</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1711364203410</updated>
-      <workItem from="1711364204448" duration="326000" />
+      <updated>1711372697641</updated>
+      <workItem from="1711372699555" duration="2998000" />
     </task>
     <servers />
   </component>
