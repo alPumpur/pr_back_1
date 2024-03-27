@@ -4,23 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7634fb13-4b59-4e94-9239-c2e710fca976" name="Changes" comment="настройка композера">
-      <change afterPath="$PROJECT_DIR$/app/Model/Post.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Model/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Src/Request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/site/post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/htdocs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/htdocs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="7634fb13-4b59-4e94-9239-c2e710fca976" name="Changes" comment="2. добавление и настройка ролей пользователя. работа с бд, регистрация">
+      <change afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/Src/Auth/Auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/Src/Auth/IdentityInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/Src/Session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/site/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/site/signup.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controller/Site.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/Site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/path.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/path.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/Src/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Src/Application.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/Src/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Src/Route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Src/Settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Src/Settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +117,7 @@
       <updated>1711372697641</updated>
       <workItem from="1711372699555" duration="6646000" />
       <workItem from="1711469717270" duration="2872000" />
-      <workItem from="1711526943418" duration="4125000" />
+      <workItem from="1711526943418" duration="8538000" />
     </task>
     <task id="LOCAL-00001" summary="реализация базового приложения">
       <option name="closed" value="true" />
@@ -152,7 +151,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711380245009</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2. добавление и настройка роле">
+      <option name="closed" value="true" />
+      <created>1711532464769</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711532464769</updated>
+    </task>
+    <task id="LOCAL-00006" summary="2. добавление и настройка ролей пользователя. работа с бд, регистрация">
+      <option name="closed" value="true" />
+      <created>1711532632427</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711532632427</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +177,8 @@
     <MESSAGE value="реализация базового приложения" />
     <MESSAGE value="реализация cтруктуры базового приложения" />
     <MESSAGE value="настройка композера" />
-    <option name="LAST_COMMIT_MESSAGE" value="настройка композера" />
+    <MESSAGE value="2. добавление и настройка роле" />
+    <MESSAGE value="2. добавление и настройка ролей пользователя. работа с бд, регистрация" />
+    <option name="LAST_COMMIT_MESSAGE" value="2. добавление и настройка ролей пользователя. работа с бд, регистрация" />
   </component>
 </project>
