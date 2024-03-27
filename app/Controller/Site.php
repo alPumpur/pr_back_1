@@ -2,11 +2,15 @@
 
 namespace Controller;
 
+use Model\Patient;
 use Model\Post;
+use Model\Visit;
 use Src\View;
 use Src\Request;
 use Model\User;
 use Src\Auth\Auth;
+use Model\Doctor;
+
 
 class Site
 {
@@ -57,5 +61,30 @@ class Site
         app()->route->redirect('/hello');
     }
 
+
+    public function doctor(Request $request): string
+    {
+        $doctor = Doctor::all();
+        if ($request->method === 'POST'&& Doctor::create($request->all())){
+            app()->route->redirect('/doctor');
+        }
+        return new View('site.doctor', ['doctor' => $doctor]);
+    }
+    public function patient(Request $request): string
+    {
+        $patient = Patient::all();
+        if ($request->method === 'POST'&& Doctor::create($request->all())){
+            app()->route->redirect('/patient');
+        }
+        return new View('site.patient', ['patient' => $patient]);
+    }
+    public function visit(Request $request): string
+    {
+        $visit = Visit::all();
+        if ($request->method === 'POST'&& Doctor::create($request->all())){
+            app()->route->redirect('/visit');
+        }
+        return new View('site.visit', ['visit' => $visit]);
+    }
 
 }
