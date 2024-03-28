@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7634fb13-4b59-4e94-9239-c2e710fca976" name="Changes" comment="верстка страниц врачей, пациентов(добавление формы)">
-      <change afterPath="$PROJECT_DIR$/app/Middlewares/SpecialCharsMiddleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Middlewares/TrimMiddleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Validators/RequireValidator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Validators/UniqueValidator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Src/Validator/AbstractValidator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Src/Validator/Validator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controller/Site.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/Site.php" afterDir="false" />
+    <list default="true" id="7634fb13-4b59-4e94-9239-c2e710fca976" name="Changes" comment="валидация и фильтрация данных">
+      <change afterPath="$PROJECT_DIR$/app/Middlewares/CSRFMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Middlewares/SpecialCharsMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Middlewares/SpecialCharsMiddleware.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Src/Middleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Src/Middleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Src/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Src/Route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Src/Auth/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Src/Auth/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +110,7 @@
       <workItem from="1711372699555" duration="6646000" />
       <workItem from="1711469717270" duration="2872000" />
       <workItem from="1711526943418" duration="19361000" />
-      <workItem from="1711615221355" duration="12841000" />
+      <workItem from="1711615221355" duration="13152000" />
     </task>
     <task id="LOCAL-00001" summary="реализация базового приложения">
       <option name="closed" value="true" />
@@ -221,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711633469004</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="валидация и фильтрация данных">
+      <option name="closed" value="true" />
+      <created>1711641650839</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1711641650839</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +243,7 @@
     <MESSAGE value="разделение по ролям" />
     <MESSAGE value="оформление ограничений" />
     <MESSAGE value="верстка страниц врачей, пациентов(добавление формы)" />
-    <option name="LAST_COMMIT_MESSAGE" value="верстка страниц врачей, пациентов(добавление формы)" />
+    <MESSAGE value="валидация и фильтрация данных" />
+    <option name="LAST_COMMIT_MESSAGE" value="валидация и фильтрация данных" />
   </component>
 </project>
