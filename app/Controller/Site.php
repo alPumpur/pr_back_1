@@ -2,6 +2,7 @@
 
 namespace Controller;
 
+use Model\Assistant;
 use Model\Patient;
 use Model\Post;
 use Model\Visit;
@@ -85,6 +86,14 @@ class Site
             app()->route->redirect('/visit');
         }
         return new View('site.visit', ['visit' => $visit]);
+    }
+    public function user(Request $request): string
+    {
+        $user = User::all();
+        if ($request->method === 'POST'&& User::create($request->all())){
+            app()->route->redirect('/user');
+        }
+        return new View('site.user', ['user' => $user]);
     }
 
 }
