@@ -9,3 +9,7 @@ return [
     'collation' => 'utf8_unicode_ci',
     'prefix' => '',
 ];
+
+// 'database' => 'phmpdytn_m1',
+// 'username' => 'phmpdytn',
+// 'password' => 'BycyTt',

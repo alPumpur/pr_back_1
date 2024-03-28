@@ -11,19 +11,19 @@
 <body>
 <header>
     <nav class="nav">
-        <a href="<?= app()->route->getUrl('/hello') ?>">Главная</a>
+        <a class="text-nav" href="<?= app()->route->getUrl('/hello') ?>">Главная</a>
         <?php
         if (!app()->auth::check()):
             ?>
-            <a href="<?= app()->route->getUrl('/login') ?>">Вход</a>
-            <a href="<?= app()->route->getUrl('/signup') ?>">Регистрация</a>
+            <a class="text-nav" href="<?= app()->route->getUrl('/login') ?>">Вход</a>
+            <a class="text-nav" href="<?= app()->route->getUrl('/signup') ?>">Регистрация</a>
         <?php
         else:
             ?>
-            <a href="<?= app()->route->getUrl('/doctor') ?>">Врачи</a>
-            <a href="<?= app()->route->getUrl('/patient') ?>">Пациенты</a>
-            <a href="<?= app()->route->getUrl('/visit') ?>">Записи к врачам</a>
-            <a href="<?= app()->route->getUrl('/logout') ?>">Выход (<?= app()->auth::user()->name ?>)</a>
+            <a class="text-nav" href="<?= app()->route->getUrl('/doctor') ?>">Врачи</a>
+            <a class="text-nav" href="<?= app()->route->getUrl('/patient') ?>">Пациенты</a>
+            <a class="text-nav" href="<?= app()->route->getUrl('/visit') ?>">Записи к врачам</a>
+            <a class="text-nav" href="<?= app()->route->getUrl('/logout') ?>">Выход (<?= app()->auth::user()->name ?>)</a>
         <?php
         endif;
         ?>

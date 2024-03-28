@@ -1,12 +1,16 @@
-<h1>Врачи</h1>
+<h1 class="text-title">Врачи</h1>
 <ul>
+<div class="block">
     <?php
     foreach ($doctor as $doctor) {
+        echo '<div style="    background-color: #c7bdd3;
+        border-radius: 25px; padding: 10px 30px 10px 30px;">' ;
         echo '<p>ФИО: ' . $doctor->name . '</p>';
         echo '<p>Дата рождения: ' . $doctor->birthdate . '</p>';
         echo '<p>Должность: ' . $doctor->post . '</p>';
         echo '<p>Специализация: ' . $doctor->specialization . '</p>';
-        echo '<br>' ;
+        echo '</div>' ;
     }
     ?>
+</div>
 </ul>
