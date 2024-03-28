@@ -87,13 +87,5 @@ class Site
         }
         return new View('site.visit', ['visit' => $visit]);
     }
-    public function user(Request $request): string
-    {
-        $user = User::all();
-        if ($request->method === 'POST'&& User::create($request->all())){
-            app()->route->redirect('/user');
-        }
-        return new View('site.user', ['user' => $user]);
-    }
 
 }

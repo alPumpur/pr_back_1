@@ -1,17 +1,4 @@
 <h1 class="text-title">Пациенты</h1>
-<ul>
-    <div class="block">
-        <?php
-        foreach ($patient as $patient) {
-            echo '<div style="    background-color: #c7bdd3;
-        border-radius: 25px; padding: 10px 30px 10px 30px;">' ;
-            echo '<p>ФИО: ' . $patient->name . '</p>';
-            echo '<p>Дата рождения: ' . $patient->birthdate . '</p>';
-            echo '</div>' ;
-        }
-        ?>
-    </div>
-</ul>
 <div class="form-addition" >
     <p class="form-addition-title">Добавить пациента</p>
     <form class="form-addition-text" method="post">
@@ -20,3 +7,17 @@
         <button class="button-addition">Добавить</button>
     </form>
 </div>
+<ul>
+    <div class="block">
+        <?php
+        foreach ($patient as $patient) {
+            echo '<div style="    background-color: #c7bdd3;
+        border-radius: 25px; padding: 10px 30px 10px 30px;">' ;
+            echo '<p>ФИО: ' . $patient->name . '</p>';
+            echo '<p>Дата рождения: ' . $patient->birthdate . '</p>';
+            echo '<button class="button-addition">Врачи</button>';
+            echo '</div>' ;
+        }
+        ?>
+    </div>
+</ul>
