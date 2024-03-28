@@ -16,13 +16,13 @@
         if (!app()->auth::check()):
             ?>
             <a class="text-nav" href="<?= app()->route->getUrl('/login') ?>">Вход</a>
-            <a class="text-nav" href="<?= app()->route->getUrl('/signup') ?>">Регистрация</a>
         <?php
         else:
             ?>
             <a class="text-nav" href="<?= app()->route->getUrl('/doctor') ?>">Врачи</a>
             <a class="text-nav" href="<?= app()->route->getUrl('/patient') ?>">Пациенты</a>
             <a class="text-nav" href="<?= app()->route->getUrl('/visit') ?>">Записи к врачам</a>
+            <a class="text-nav" href="<?= app()->route->getUrl('/signup') ?>">Сотрудники</a>
             <a class="text-nav" href="<?= app()->route->getUrl('/logout') ?>">Выход (<?= app()->auth::user()->name ?>)</a>
         <?php
         endif;

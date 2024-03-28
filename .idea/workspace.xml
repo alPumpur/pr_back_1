@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7634fb13-4b59-4e94-9239-c2e710fca976" name="Changes" comment="настройка отображения данных на страницах(верстка)">
-      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+    <list default="true" id="7634fb13-4b59-4e94-9239-c2e710fca976" name="Changes" comment="оформление css и html">
+      <change afterPath="$PROJECT_DIR$/app/Middlewares/AdminSysMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/site/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/htdocs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/htdocs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controller/Site.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/Site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Src/Auth/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Src/Auth/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/site/doctor.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/doctor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/site/hello.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/hello.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +115,8 @@
       <updated>1711372697641</updated>
       <workItem from="1711372699555" duration="6646000" />
       <workItem from="1711469717270" duration="2872000" />
-      <workItem from="1711526943418" duration="18032000" />
+      <workItem from="1711526943418" duration="19361000" />
+      <workItem from="1711615221355" duration="6591000" />
     </task>
     <task id="LOCAL-00001" summary="реализация базового приложения">
       <option name="closed" value="true" />
@@ -182,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711555436730</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="оформление css и html">
+      <option name="closed" value="true" />
+      <created>1711556834172</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711556834172</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +213,7 @@
     <MESSAGE value="авторизация" />
     <MESSAGE value="реализация прав доступа" />
     <MESSAGE value="настройка отображения данных на страницах(верстка)" />
-    <option name="LAST_COMMIT_MESSAGE" value="настройка отображения данных на страницах(верстка)" />
+    <MESSAGE value="оформление css и html" />
+    <option name="LAST_COMMIT_MESSAGE" value="оформление css и html" />
   </component>
 </project>

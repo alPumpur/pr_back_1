@@ -58,4 +58,11 @@ class Auth
         return true;
     }
 
+    public static function adminControl(): bool
+    {
+        if (self::$user->getRoleId() == 2) {
+            return true;
+        }
+        return false;
+    }
 }
