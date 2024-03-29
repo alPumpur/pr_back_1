@@ -3,10 +3,34 @@
     <p class="form-addition-title">Добавить запись</p>
     <form class="form-addition-text" method="post">
     <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
-        <label><input class="input" type="text" name="id_doctor" placeholder="Врач"></label>
-        <label><input class="input" type="text" name="id_patient" placeholder="Пациент"></label>
+<!--        <label><input class="input" type="text" name="id_doctor" placeholder="Врач"></label>-->
+        <p>Врач</p>
+        <select class="input" name="id_doctor" id="id">
+            <?php
+            foreach ($doctor as $doctor){
+                echo '<option value="' . $doctor->id . '">' . $doctor->name . '</option>';
+            }
+            ?>
+        </select>
+<!--        <label><input class="input" type="text" name="id_patient" placeholder="Пациент"></label>-->
+        <p>Пациент</p>
+        <select class="input" name="id_patient" id="id">
+            <?php
+            foreach ($patient as $patient){
+                echo '<option value="' . $patient->id . '">' . $patient->name . '</option>';
+            }
+            ?>
+        </select>
         <label><input class="input" type="date" name="date" placeholder="Дата приёма"></label>
-        <label><input class="input" type="text" name="assistent" placeholder="Кем записан"></label>
+<!--        <label><input class="input" type="text" name="assistent" placeholder="Кем записан"></label>-->
+        <p>Кем записан</p>
+        <select class="input" name="assistant" id="id">
+            <?php
+            foreach ($user as $user){
+                echo '<option value="' . $user->id . '">' . $user->name . '</option>';
+            }
+            ?>
+        </select>
         <button class="button-addition">Добавить</button>
     </form>
 </div>

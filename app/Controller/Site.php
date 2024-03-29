@@ -103,10 +103,13 @@ class Site
     public function visit(Request $request): string
     {
         $visit = Visit::all();
+        $doctor = Doctor::all();
+        $patient = Patient::all();
+        $user = User::all();
         if ($request->method === 'POST'&& Visit::create($request->all())){
             app()->route->redirect('/visit');
         }
-        return new View('site.visit', ['visit' => $visit]);
+        return new View('site.visit', ['visit' => $visit, 'doctor' => $doctor, 'patient' => $patient, 'user' => $user]);
     }
 
 
