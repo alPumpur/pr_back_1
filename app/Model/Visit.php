@@ -13,7 +13,6 @@ class Visit extends Model
         'id_doctor',
         'id_patient',
         'date',
-        'status',
         'assistant',
     ];
 }

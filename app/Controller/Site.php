@@ -92,7 +92,7 @@ class Site
     public function patient(Request $request): string
     {
         $patient = Patient::all();
-        if ($request->method === 'POST'&& Doctor::create($request->all())){
+        if ($request->method === 'POST'&& Patient::create($request->all())){
             app()->route->redirect('/patient');
         }
         return new View('site.patient', ['patient' => $patient]);
@@ -100,7 +100,7 @@ class Site
     public function visit(Request $request): string
     {
         $visit = Visit::all();
-        if ($request->method === 'POST'&& Doctor::create($request->all())){
+        if ($request->method === 'POST'&& Visit::create($request->all())){
             app()->route->redirect('/visit');
         }
         return new View('site.visit', ['visit' => $visit]);
