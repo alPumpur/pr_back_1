@@ -6,7 +6,7 @@
         <label><input class="input" type="text" name="name" placeholder="ФИО"></label>
         <label><input class="input" type="date" name="birthdate" placeholder="Дата рождения"></label>
 <!--        <label><input class="input" type="text" name="post" placeholder="Должность"></label>-->
-        <p>Должность</p>
+        <p style="margin-bottom: 10px; margin-top: 0; color: #422f57;">Должность</p>
         <select class="input" name="post" id="id">
             <?php
             foreach ($position as $position){
@@ -15,7 +15,7 @@
             ?>
         </select>
 <!--        <label><input class="input" type="text" name="specialization" placeholder="Специализация"></label>-->
-        <p>Специализация</p>
+        <p style="margin-bottom: 10px; margin-top: 0; color: #422f57;">Специализация</p>
         <select class="input" name="specialization" id="specialization">
             <?php
             foreach ($specialization as $specialization){
@@ -36,7 +36,7 @@
             echo '<p>Дата рождения: ' . $doctor->birthdate . '</p>';
             echo '<p>Должность: ' . $doctor->post . '</p>';
             echo '<p>Специализация: ' . $doctor->specialization . '</p>';
-            echo '<button class="button-addition">Пациенты</button>';
+//            echo '<button class="button-addition">Пациенты</button>';
             echo '</div>' ;
         }
         ?>

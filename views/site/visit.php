@@ -4,7 +4,7 @@
     <form class="form-addition-text" method="post">
     <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
 <!--        <label><input class="input" type="text" name="id_doctor" placeholder="Врач"></label>-->
-        <p>Врач</p>
+        <p style="margin-bottom: 10px; margin-top: 0; color: #422f57;">Врач</p>
         <select class="input" name="id_doctor" id="id">
             <?php
             foreach ($doctor as $doctor){
@@ -13,7 +13,7 @@
             ?>
         </select>
 <!--        <label><input class="input" type="text" name="id_patient" placeholder="Пациент"></label>-->
-        <p>Пациент</p>
+        <p style="margin-bottom: 10px; margin-top: 0; color: #422f57;">Пациент</p>
         <select class="input" name="id_patient" id="id">
             <?php
             foreach ($patient as $patient){
@@ -23,7 +23,7 @@
         </select>
         <label><input class="input" type="date" name="date" placeholder="Дата приёма"></label>
 <!--        <label><input class="input" type="text" name="assistent" placeholder="Кем записан"></label>-->
-        <p>Кем записан</p>
+        <p style="margin-bottom: 10px; margin-top: 0; color: #422f57;">Кем записан</p>
         <select class="input" name="assistant" id="id">
             <?php
             foreach ($user as $user){
