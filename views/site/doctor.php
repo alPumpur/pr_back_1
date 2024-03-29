@@ -5,8 +5,24 @@
     <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
         <label><input class="input" type="text" name="name" placeholder="ФИО"></label>
         <label><input class="input" type="date" name="birthdate" placeholder="Дата рождения"></label>
-        <label><input class="input" type="text" name="post" placeholder="Должность"></label>
-        <label><input class="input" type="text" name="specialization" placeholder="Специализация"></label>
+<!--        <label><input class="input" type="text" name="post" placeholder="Должность"></label>-->
+        <p>Должность</p>
+        <select name="post" id="id">
+            <?php
+            foreach ($position as $position){
+                echo '<option value="' . $position->id . '">' . $position->name . '</option>';
+            }
+            ?>
+        </select>
+<!--        <label><input class="input" type="text" name="specialization" placeholder="Специализация"></label>-->
+        <p>Специализация</p>
+        <select name="specialization" id="specialization">
+            <?php
+            foreach ($specialization as $specialization){
+                echo '<option value="' . $specialization->id . '">' . $specialization->name . '</option>';
+            }
+            ?>
+        </select>
         <button class="button-addition">Добавить</button>
     </form>
 </div>
