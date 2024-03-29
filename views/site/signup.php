@@ -6,7 +6,6 @@
     <label><input class="input" type="text" name="name" placeholder="ФИО"></label>
     <label><input class="input" type="text" name="login" placeholder="Логин"></label>
     <label><input class="input" type="password" name="password" placeholder="Пароль"></label>
-    <label><input class="input" type="text" name="role" placeholder="Роль"></label>
     <button class="button">Добавить</button>
 </form>
 </div>
