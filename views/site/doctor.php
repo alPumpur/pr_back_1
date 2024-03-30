@@ -1,5 +1,4 @@
 <h1 class="text-title">Врачи</h1>
-<h3><?= $message ?? ''; ?></h3>
 <div class="form-addition" >
     <p class="form-addition-title">Добавить врача</p>
     <form class="form-addition-text" method="post">

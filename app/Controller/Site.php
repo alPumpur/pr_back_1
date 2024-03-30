@@ -80,17 +80,38 @@ class Site
         app()->route->redirect('/hello');
     }
 
+//    public function doctor(Request $request): string
+//    {
+//        $doctor = Doctor::all();
+//        $position = Position::all();
+//        $specialization = Specialization::all();
+//        if ($request->method === 'POST'&& Doctor::create($request->all())){
+//            app()->route->redirect('/doctor');
+//        }
+//        return new View('site.doctor', ['doctor' => $doctor, 'position' => $position, 'specialization' => $specialization] );
+//    }
     public function doctor(Request $request): string
     {
         $doctor = Doctor::all();
         $position = Position::all();
         $specialization = Specialization::all();
-        if ($request->method === 'POST'&& Doctor::create($request->all())){
-            app()->route->redirect('/doctor');
-        }
-        return new View('site.doctor', ['doctor' => $doctor, 'position' => $position, 'specialization' => $specialization] );
-    }
+        if ($request->method === 'POST'){
 
+            $validators = new Validator($request->all(), [
+                'name' => ['required', 'unique:doctors,name', 'specialSymbols'],
+            ], );
+
+            if($validators->fails()){
+                return new View('site.doctor',
+                    ['doctor'=>$doctor, 'message' => json_encode($validators->errors(), JSON_UNESCAPED_UNICODE)]);
+            }
+
+            if(Doctor::create($request->all())){
+                app()->route->redirect('/doctor');
+            }
+        }
+        return new View('site.doctor', ['doctor' => $doctor, 'position' => $position, 'specialization' => $specialization]);
+    }
 //    public function patient(Request $request): string
 //    {
 //        $patient = Patient::all();
