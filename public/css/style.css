@@ -23,7 +23,7 @@
 .block{
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
 }
 
 .text-title{

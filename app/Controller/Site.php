@@ -60,7 +60,6 @@ class Site
         return new View('site.signup');
     }
 
-
     public function login(Request $request): string
     {
         //Если просто обращение к странице, то отобразить форму
@@ -81,7 +80,6 @@ class Site
         app()->route->redirect('/hello');
     }
 
-
     public function doctor(Request $request): string
     {
         $doctor = Doctor::all();
@@ -92,25 +90,37 @@ class Site
         }
         return new View('site.doctor', ['doctor' => $doctor, 'position' => $position, 'specialization' => $specialization] );
     }
+
+//    public function patient(Request $request): string
+//    {
+//        $patient = Patient::all();
+//        if ($request->method === 'POST'&& Patient::create($request->all())){
+//            app()->route->redirect('/patient');
+//        }
+//        return new View('site.patient', ['patient' => $patient]);
+//    }
+
     public function patient(Request $request): string
     {
         $patient = Patient::all();
-        if ($request->method === 'POST'&& Patient::create($request->all())){
-            app()->route->redirect('/patient');
+        if ($request->method === 'POST'){
+
+            $validators = new Validator($request->all(), [
+                'name' => ['required', 'unique:patients,name', 'specialSymbols'],
+            ], );
+
+            if($validators->fails()){
+                return new View('site.patient',
+                    ['patient'=>$patient, 'message' => json_encode($validators->errors(), JSON_UNESCAPED_UNICODE)]);
+            }
+
+            if(Patient::create($request->all())){
+                app()->route->redirect('/patient');
+            }
         }
-        return new View('site.patient', ['patient' => $patient]);
+        return new View('site.patient', ['patient' => $patient,]);
     }
-//    public function visit(Request $request): string
-//    {
-//        $visit = Visit::all();
-//        $doctor = Doctor::all();
-//        $patient = Patient::all();
-//        $user = User::all();
-//        if ($request->method === 'POST'&& Visit::create($request->all())){
-//            app()->route->redirect('/visit');
-//        }
-//        return new View('site.visit', ['visit' => $visit, 'doctor' => $doctor, 'patient' => $patient, 'user' => $user]);
-//    }
+
     public function visit(Request $request): string
     {
         $doctor = Doctor::all();
@@ -132,6 +142,4 @@ class Site
         }
         return new View('site.visit', ['visit' => $visit, 'doctor' => $doctor, 'patient' => $patient, 'user' => $user]);
     }
-
-
 }

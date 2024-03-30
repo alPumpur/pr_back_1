@@ -3,6 +3,7 @@
     <p class="form-addition-title">Добавить пациента</p>
     <form class="form-addition-text" method="post">
         <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
+        <h4 class="form-addition-title"><?= $message ?? ''; ?></h4>
         <label><input class="input" type="text" name="name" placeholder="ФИО"></label>
         <label><input class="input" type="date" name="birthdate" placeholder="Дата рождения"></label>
         <button class="button-addition">Добавить</button>
@@ -17,7 +18,6 @@
             echo '<p>Пациент: ' . $patient->id . '</p>';
             echo '<p>ФИО: ' . $patient->name . '</p>';
             echo '<p>Дата рождения: ' . $patient->birthdate . '</p>';
-//            echo '<button class="button-addition">Врачи</button>';
             echo '</div>' ;
         }
         ?>

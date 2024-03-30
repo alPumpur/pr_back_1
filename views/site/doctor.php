@@ -1,8 +1,10 @@
 <h1 class="text-title">Врачи</h1>
+<h3><?= $message ?? ''; ?></h3>
 <div class="form-addition" >
     <p class="form-addition-title">Добавить врача</p>
     <form class="form-addition-text" method="post">
         <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
+        <h4 class="form-addition-title"><?= $message ?? ''; ?></h4>
         <label><input class="input" type="text" name="name" placeholder="ФИО"></label>
         <label><input class="input" type="date" name="birthdate" placeholder="Дата рождения"></label>
         <p style="margin-bottom: 10px; margin-top: 0; color: #422f57;">Должность</p>
