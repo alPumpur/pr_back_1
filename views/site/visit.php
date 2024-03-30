@@ -35,10 +35,12 @@
     </form>
 </div>
 <div class="form-addition" >
-    <div>
-        <input  class="input" style="width: 240px; padding: 5px" type="search" name="search" id="search-input" placeholder="Поиск">
-        <button class="button-addition">Поиск</button>
-    </div>
+        <form action="" method="post">
+            <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
+            <input class="input" type="search" name="search" id="search-input" placeholder="Поиск по врачам и пациентам">
+            <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
+            <input type="submit" class="button-addition"></input>
+        </form>
 </div>
 <ul>
     <div class="block">

@@ -39,7 +39,7 @@
             echo '<p>Должность: ' . $doctor->post . '</p>';
             echo '<p>Специализация: ' . $doctor->specialization . '</p>';
             echo '<p style="font-size: 24px; margin-bottom: 0; margin-top: 0">
-                  <img style="width: 50px; height: 50px" src="/test/images/' . $doctor->image . '" alt=""></p>';
+                  <img style="max-width: 90px; height: 60px" src="/images/' . $doctor->image . '" alt=""></p>';
             echo '</div>' ;
         }
         ?>
