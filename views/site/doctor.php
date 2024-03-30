@@ -2,10 +2,9 @@
 <div class="form-addition" >
     <p class="form-addition-title">Добавить врача</p>
     <form class="form-addition-text" method="post">
-    <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
+        <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
         <label><input class="input" type="text" name="name" placeholder="ФИО"></label>
         <label><input class="input" type="date" name="birthdate" placeholder="Дата рождения"></label>
-<!--        <label><input class="input" type="text" name="post" placeholder="Должность"></label>-->
         <p style="margin-bottom: 10px; margin-top: 0; color: #422f57;">Должность</p>
         <select class="input" name="post" id="id">
             <?php
@@ -14,7 +13,6 @@
             }
             ?>
         </select>
-<!--        <label><input class="input" type="text" name="specialization" placeholder="Специализация"></label>-->
         <p style="margin-bottom: 10px; margin-top: 0; color: #422f57;">Специализация</p>
         <select class="input" name="specialization" id="specialization">
             <?php
@@ -23,6 +21,10 @@
             }
             ?>
         </select>
+        <div>
+
+        </div>
+        <input class="input" type="file" name="image">
         <button class="button-addition">Добавить</button>
     </form>
 </div>
@@ -36,7 +38,8 @@
             echo '<p>Дата рождения: ' . $doctor->birthdate . '</p>';
             echo '<p>Должность: ' . $doctor->post . '</p>';
             echo '<p>Специализация: ' . $doctor->specialization . '</p>';
-//            echo '<button class="button-addition">Пациенты</button>';
+            echo '<p style="font-size: 24px; margin-bottom: 0; margin-top: 0">
+                  <img style="width: 50px; height: 50px" src="/test/images/' . $doctor->image . '" alt=""></p>';
             echo '</div>' ;
         }
         ?>

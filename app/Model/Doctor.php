@@ -14,5 +14,6 @@ class Doctor extends Model
         'birthdate',
         'post',
         'specialization',
+        'image'
     ];
 }
