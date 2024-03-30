@@ -14,6 +14,7 @@
         foreach ($patient as $patient) {
             echo '<div style="    background-color: #c7bdd3;
         border-radius: 25px; padding: 10px 30px 10px 30px;">' ;
+            echo '<p>Пациент: ' . $patient->id . '</p>';
             echo '<p>ФИО: ' . $patient->name . '</p>';
             echo '<p>Дата рождения: ' . $patient->birthdate . '</p>';
 //            echo '<button class="button-addition">Врачи</button>';

@@ -37,9 +37,9 @@
 <div class="form-addition" >
         <form action="" method="post">
             <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
-            <input class="input" type="search" name="search" id="search-input" placeholder="Поиск по врачам и пациентам">
+            <input class="input" style="width: 230px" type="search" name="search" id="search-input" placeholder="Поиск по врачам и пациентам">
             <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
-            <input type="submit" class="button-addition"></input>
+            <button class="button-addition">Поиск</button>
         </form>
 </div>
 <ul>
