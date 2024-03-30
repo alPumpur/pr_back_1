@@ -98,8 +98,8 @@ class Site
         if ($request->method === 'POST'){
 
             $validators = new Validator($request->all(), [
-                'name' => ['required', 'unique:doctors,name', 'specialSymbols'],
-            ], );
+                'name' => ['required', 'specialSymbols'],
+            ],  ['required' => 'Поле не заполнено', 'specialSymbols' => 'Поле не должно содержать спец. символы'], );
 
             if($validators->fails()){
                 return new View('site.doctor',
@@ -127,8 +127,9 @@ class Site
         if ($request->method === 'POST'){
 
             $validators = new Validator($request->all(), [
-                'name' => ['required', 'unique:patients,name', 'specialSymbols'],
-            ], );
+                'name' => ['required', 'specialSymbols'],
+            ], ['required' => 'Поле не заполнено', 'specialSymbols' => 'Поле не должно содержать спец. символы'],
+            );
 
             if($validators->fails()){
                 return new View('site.patient',
