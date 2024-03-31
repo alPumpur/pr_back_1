@@ -4,8 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aac9216720398ddb36e68899b453d5b2",
+    "content-hash": "b73bf1e4c4e5fb9505859cd6c42472ee",
     "packages": [
+        {
+            "name": "alpumpur/demo-collect",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alPumpur/demo-collect.git",
+                "reference": "603821ccb701ca5e82ffc19b78e6389fba1c3246"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alPumpur/demo-collect/zipball/603821ccb701ca5e82ffc19b78e6389fba1c3246",
+                "reference": "603821ccb701ca5e82ffc19b78e6389fba1c3246",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 | ^8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Collect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "alPumpur",
+                    "email": "aleftinapumpur@gmail.com"
+                }
+            ],
+            "description": "Module for working with arrays",
+            "support": {
+                "issues": "https://github.com/alPumpur/demo-collect/issues",
+                "source": "https://github.com/alPumpur/demo-collect/tree/master"
+            },
+            "time": "2024-03-31T10:53:23+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.12.1",
@@ -1673,7 +1717,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "illuminate/database": 20,
-        "illuminate/events": 20
+        "illuminate/events": 20,
+        "nikic/fast-route": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
