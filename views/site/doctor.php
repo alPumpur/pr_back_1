@@ -1,7 +1,7 @@
 <h1 class="text-title">Врачи</h1>
 <div class="form-addition" >
     <p class="form-addition-title">Добавить врача</p>
-    <form class="form-addition-text" method="post">
+    <form class="form-addition-text" method="post" enctype="multipart/form-data">
         <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
         <h4 class="form-addition-title"><?= $message ?? ''; ?></h4>
         <label><input class="input" type="text" name="name" placeholder="ФИО"></label>
