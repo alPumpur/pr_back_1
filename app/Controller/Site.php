@@ -80,16 +80,24 @@ class Site
         app()->route->redirect('/hello');
     }
 
-//    public function doctor(Request $request): string
-//    {
-//        $doctor = Doctor::all();
-//        $position = Position::all();
-//        $specialization = Specialization::all();
-//        if ($request->method === 'POST'&& Doctor::create($request->all())){
-//            app()->route->redirect('/doctor');
-//        }
-//        return new View('site.doctor', ['doctor' => $doctor, 'position' => $position, 'specialization' => $specialization] );
-//    }
+    public function spec(Request $request): string
+    {
+        $specialization = Specialization::all();
+        if ($request->method === 'POST'&& Specialization::create($request->all())){
+            app()->route->redirect('/specialization');
+        }
+        return new View('site.specialization', ['specialization' => $specialization] );
+    }
+
+    public function post(Request $request): string
+    {
+        $position = Position::all();
+        if ($request->method === 'POST'&& Position::create($request->all())){
+            app()->route->redirect('/position');
+        }
+        return new View('site.position', ['position' => $position] );
+    }
+
     public function doctor(Request $request): string
     {
         $doctor = Doctor::all();
@@ -164,4 +172,6 @@ class Site
         }
         return new View('site.visit', ['visit' => $visit, 'doctor' => $doctor, 'patient' => $patient, 'user' => $user]);
     }
+
+
 }

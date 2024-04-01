@@ -19,7 +19,13 @@
         <?php
         else:
             ?>
-            <a class="text-nav" href="<?= app()->route->getUrl('/doctor') ?>">Врачи</a>
+<!--            <a class="text-nav" href="--><?php //= app()->route->getUrl('/doctor') ?><!--">Врачи</a>-->
+            <select class="text-nav" onchange="location = this.value;">
+                <option selected disabled>Врачи</option>
+                <option value="<?= app()->route->getUrl('/doctor') ?>">Все врачи</option>
+                <option value="<?= app()->route->getUrl('/specialization') ?>">Добавить специализацию</option>
+                <option value="<?= app()->route->getUrl('/position') ?>">Добавить должность</option>
+            </select>
             <a class="text-nav" href="<?= app()->route->getUrl('/patient') ?>">Пациенты</a>
             <a class="text-nav" href="<?= app()->route->getUrl('/visit') ?>">Записи к врачам</a>
             <a class="text-nav" href="<?= app()->route->getUrl('/signup') ?>">Сотрудники</a>
