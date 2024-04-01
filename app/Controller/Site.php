@@ -113,13 +113,27 @@ class Site
                 return new View('site.doctor',
                     ['doctor'=>$doctor, 'message' => json_encode($validators->errors(), JSON_UNESCAPED_UNICODE)]);
             }
-
-            if(Doctor::create($request->all())){
-                app()->route->redirect('/doctor');
+            if($_FILES['image']){
+                $image = $_FILES['image'];
+                $root = app()->settings->getRootPath();
+                $path = $_SERVER['DOCUMENT_ROOT'] . $root . '/public/image/';
+                $name = mt_rand(0, 10000).$image['name'];
+                move_uploaded_file($image['tmp_name'], $path . $name);
+                $building_data = $request->all();
+                $building_data['image'] = $name;
+                if(Doctor::create($building_data)){
+                    app()->route->redirect('/doctor');
+                }
+            } else{
+                if(Doctor::create($request->all())){
+                    app()->route->redirect('/doctor');
+                }
             }
         }
         return new View('site.doctor', ['doctor' => $doctor, 'position' => $position, 'specialization' => $specialization]);
     }
+
+
 //    public function patient(Request $request): string
 //    {
 //        $patient = Patient::all();

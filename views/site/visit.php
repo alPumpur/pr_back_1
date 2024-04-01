@@ -21,7 +21,7 @@
             }
             ?>
         </select>
-        <label><input class="input" type="date" name="date" placeholder="Дата приёма"></label>
+        <label><input class="input" type="datetime-local" name="date" placeholder="Дата приёма"></label>
         <!--        <label><input class="input" type="text" name="assistent" placeholder="Кем записан"></label>-->
         <p style="margin-bottom: 10px; margin-top: 0; color: #422f57;">Кем записан</p>
         <select class="input" name="assistant" id="id">
