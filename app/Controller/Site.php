@@ -174,17 +174,21 @@ class Site
         if (isset($_POST['search'])) {
             $search = $_POST['search'];
             if ($request->method === 'POST'){
-                $visit = Visit::where('id_doctor', 'like', "%{$search}%")->orWhere('id_patient', 'like', "%{$search}%")->get();
-                return new View('site.visit', ['visit' => $visit, 'doctor' => $doctor, 'patient' => $patient, 'user' => $user]);
+                $visits = Visit::select('visits.*')
+                    ->join('doctors', 'visits.id_doctor', '=', 'doctors.id')
+                    ->join('patients', 'visits.id_patient', '=', 'patients.id')
+                    ->where('doctors.name', 'like', "%{$search}%")->orWhere('patients.name', 'like', "%{$search}%")
+                    ->get();
+                return new View('site.visit', ['visits' => $visits, 'doctor' => $doctor, 'patient' => $patient, 'user' => $user]);
             }
         } else {
-            $visit = Visit::all();
+            $visits = Visit::all();
             if ($request->method === 'POST'&& Visit::create($request->all())){
                 app()->route->redirect('/visit');
-                return new View('site.visit', ['visit' => $visit, 'doctor' => $doctor, 'patient' => $patient, 'user' => $user]);
+                return new View('site.visit', ['visits' => $visits, 'doctor' => $doctor, 'patient' => $patient, 'user' => $user]);
             }
         }
-        return new View('site.visit', ['visit' => $visit, 'doctor' => $doctor, 'patient' => $patient, 'user' => $user]);
+        return new View('site.visit', ['visits' => $visits, 'doctor' => $doctor, 'patient' => $patient, 'user' => $user]);
     }
 
 

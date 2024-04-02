@@ -35,23 +35,25 @@
     </form>
 </div>
 <div class="form-addition" >
-        <form action="" method="post">
-            <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
-            <input class="input" style="width: 230px" type="search" name="search" id="search-input" placeholder="Поиск по врачам и пациентам">
-            <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
-            <button class="button-addition">Поиск</button>
-        </form>
+    <form action="" method="post">
+        <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
+        <input class="input" style="width: 230px" type="search" name="search" id="search-input" placeholder="Поиск по врачам и пациентам">
+        <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
+        <button class="button-addition">Поиск</button>
+    </form>
 </div>
 <ul>
     <div class="block">
         <?php
-        foreach ($visit as $visit) {
+        foreach ($visits as $visit) {
+
             echo '<div style="    background-color: #c7bdd3;
         border-radius: 25px; padding: 10px 30px 10px 30px;">' ;
-            echo '<p>Врач: ' . $visit->id_doctor . '</p>';
-            echo '<p>Пациент: ' . $visit->id_patient . '</p>';
+
+            echo '<p>Врач: ' . $visit->doctor->name. '</p>';
+            echo '<p>Пациент: ' . $visit->patient->name . '</p>';
             echo '<p>Дата приёма: ' . $visit->date . '</p>';
-            echo '<p>Записан: ' . $visit->assistant . '</p>';
+            echo '<p>Записан: ' . $visit->user->name . '</p>';
             echo '</div>' ;
         }
         ?>
