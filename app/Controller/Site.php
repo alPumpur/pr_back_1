@@ -13,6 +13,7 @@ use Model\User;
 use Src\Auth\Auth;
 use Model\Doctor;
 use Src\Validator\Validator;
+use demo_collect2;
 
 class Site
 {

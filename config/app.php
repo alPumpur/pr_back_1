@@ -15,9 +15,9 @@ return [
         'specialSymbols' => \Validators\SpecSymbolsValidator::class,
     ],
     'routeAppMiddleware' => [
-        'csrf' => \Middlewares\CSRFMiddleware::class,
-        'trim' => \Middlewares\TrimMiddleware::class,
-        'specialChars' => \Middlewares\SpecialCharsMiddleware::class,
+        'csrf' => Middlewares\CSRFMiddleware::class,
+        'trim' => Middlewares\SpecialCharsMiddleware::class,
+        'specialChars' => Middlewares\TrimMiddleware::class,
     ],
 
 
