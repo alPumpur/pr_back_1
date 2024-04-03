@@ -15,7 +15,8 @@
         "illuminate/database": "^10.0@dev",
         "illuminate/events": "^10.0@dev",
         "nikic/fast-route": "^2.0@dev",
-        "alpumpur/demo-collect": "dev-master"
+        "alpumpur/demo-collect": "dev-master",
+        "alpumpur/packet2": "dev-main"
     },
     "autoload": {
         "psr-4": {
